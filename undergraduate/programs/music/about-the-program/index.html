@@ -3977,20 +3977,20 @@
                                     <hr class="half-rule" />
                                     <h2 id="faculty">Meet the Faculty</h2>
                                     <div class="text-center">
-                                        <a aria-role="button" class="button active filter" id="all">All
+                                        <a role="button" class="button active filter" id="all">All
                                         </a>
-                                        <a aria-role="button" class="button filter" id="voice">Voice
+                                        <a role="button" class="button filter" id="voice">Voice
                                         </a>
-                                        <a aria-role="button" class="button filter" id="strings">Strings
+                                        <a role="button" class="button filter" id="strings">Strings
                                         </a>
-                                        <a aria-role="button" class="button filter" id="piano">Piano
+                                        <a role="button" class="button filter" id="piano">Piano
                                         </a>
-                                        <a aria-role="button" class="button filter" id="winds-perc">Winds and Percussion
+                                        <a role="button" class="button filter" id="winds-perc">Winds and Percussion
                                         </a>
-                                        <a aria-role="button" class="button filter" id="ctt">Composition, Theory, and
+                                        <a role="button" class="button filter" id="ctt">Composition, Theory, and
                                             Technology
                                         </a>
-                                        <a aria-role="button" class="button filter" id="jazz-pop">Jazz and Popular music
+                                        <a role="button" class="button filter" id="jazz-pop">Jazz and Popular music
                                         </a>
                                     </div>
                                     <div class="margin-top">
@@ -7337,5 +7337,19 @@
         </section>
     </footer>
 </body>
-
+<script type="text/javascript">
+    var $btns = $(".filter").click(function() {
+        if ("all" == this.id){
+            $("#parent > div").fadeIn(450);
+        }
+        else {
+            var i = $("." + this.id).fadeIn(450);
+            $("#parent > div").not(i).hide()
+        }
+        $btns.removeClass("active"), $(this).addClass("active")
+    $(".modal.fade").hide()
+    });
+    
+    
+    </script>
 </html>
