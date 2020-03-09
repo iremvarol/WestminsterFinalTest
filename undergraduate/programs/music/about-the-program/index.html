@@ -4,7 +4,7 @@
 <head>
     <!-- Head Links - Before Default Links -->
     <link rel="stylesheet" type="text/css" href="/styles/css-before.css" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
@@ -3776,8 +3776,7 @@
                             </li>
                             <li class="flexnav__list-item">
                                 <a class="flexnav__link flexnav-1__link"
-                                    href="/internal-content/resources-and-services/current-student-resources"
-                                    sfref="[f669d9a7-009d-4d83-ddaa-000000000002]8a8f1746-beef-6cf4-9016-ff000033899e">Current
+                                    href="/internal-content/resources-and-services/current-student-resources">Current
                                     Students</a>
                             </li>
                         </ul>
@@ -4097,13 +4096,11 @@
                                                 </div>
                                                 <div class=" margin-top">
                                                     <div class="card-footer card-footer-block">
-                                                        <a class="button" data-target="#modal1573855"
-                                                            data-toggle="modal" href="#0" type="button">Know More</a>
+                                                        <a class="button" data-target="#modal1573855" data-toggle="modal" href="#0" role="button">Know More</a>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div aria-labelledby="myModal157385Label" class="modal fade"
-                                                id="modal1573855" role="dialog" style="display:none;" tabindex="-1">
+                                            <div aria-labelledby="myModal157385Label" class="modal fade" id="modal1573855" role="dialog" style="display:none;" tabindex="-1">
                                                 <div class="modal-dialog" role="document">
                                                     <div class="modal-content">
                                                         <div class="modal-header">
@@ -7126,8 +7123,7 @@
                             </a>
                         </p>
                         <p class="no-margin">
-                            <a class="button button-thistle" href="/about/campus-map"
-                                sfref="[f669d9a7-009d-4d83-ddaa-000000000002]6cb71446-beef-6cf4-9016-ff000033899e">
+                            <a class="button button-thistle" href="/about/campus-map">
                                 <span class="fa fa-map footer__icon"></span> Campus Map
                             </a>
                         </p>
@@ -7338,8 +7334,8 @@
     </footer>
 </body>
 <script type="text/javascript">
-    var $btns = $(".filter").click(function() {
-        if ("all" == this.id){
+    var $btns = $(".filter").click(function () {
+        if ("all" == this.id) {
             $("#parent > div").fadeIn(450);
         }
         else {
@@ -7347,9 +7343,10 @@
             $("#parent > div").not(i).hide()
         }
         $btns.removeClass("active"), $(this).addClass("active")
-    $(".modal.fade").hide()
+        $(".modal.fade").hide()
     });
-    
-    
-    </script>
+
+
+</script>
+
 </html>
