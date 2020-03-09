@@ -2743,14 +2743,16 @@
 
                     <div class="ng-scope">
                         <div>
-                            <ul class="list-unstyled directory-profile--list" role="tablist">
+                            <ul class="list-unstyled directory-profile--list" role="tablist"  id="accordion" aria-multiselectable="true">
 
-                                <li class="directory-profile--list-item" >
-                                    <div class="accordion-item directory-profile--accordion-item">
-                                        <div class="accordion-toggle accordion-item collapsed" data-toggle="collapse" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne" role="tab" id="headingOne">
+                                <li class="directory-profile--list-item">
+                                    <div class="accordion-item directory-profile--accordion-item" >
+                                        <div class="accordion-toggle accordion-item collapsed"  role="tab" id="headingOne">
                                             <div class="accordion-item-title no-select">
+                                                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                                                 <h4>Knight, Victoria</h4>
                                                 <h5>Accounting Office</h5>
+                                            </a>
                                                 <p>
                                                     <a href="tel:801-832-2132">801-832-2129</a>
                                                 </p>
@@ -2803,12 +2805,14 @@
                                 </li>
 
 
-                                <li class="directory-profile--list-item">
+                                <li class="directory-profile--list-item" >
                                     <div class="accordion-item directory-profile--accordion-item">
-                                        <div class="accordion-toggle accordion-item collapsed" data-toggle="collapse" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" role="tab" id="headingTwo">
+                                        <div class="accordion-toggle accordion-item collapsed" role="tab" id="headingTwo" >
                                             <div class="accordion-item-title no-select">
+                                                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
                                                 <h4> Wycoff, Twila</h4>
                                                 <h5>Accounts Payable</h5>
+                                            </a>
                                                 <p>
                                                     <a href="tel:801-832-2132">801-832-2132</a>
                                                 </p>
@@ -2855,10 +2859,12 @@
 
                                 <li class="directory-profile--list-item">
                                     <div class="accordion-item directory-profile--accordion-item">
-                                        <div class="accordion-toggle accordion-item collapsed" data-toggle="collapse" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree" role="tab" id="headingThree">
+                                        <div class="accordion-toggle accordion-item collapsed" role="tab" id="headingThree" >
                                             <div class="accordion-item-title no-select">
+                                                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
                                                 <h4>Smith Janalyn</h4>
                                                 <h5>Accounting</h5>
+                                                </a>
                                                 <p>
                                                     <a href="tel:801-832-2121">801-832-2121</a>
                                                 </p>
